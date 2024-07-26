@@ -1,0 +1,66 @@
+body {
+    font-family: "Nunito";
+}
+
+.navbar-dark {
+    background-color: black;
+    opacity: 0.90;
+}
+
+.navbar-brand .logo {
+    width: 8rem;
+    height: auto;
+}
+
+@media (min-width: 992px) {
+    .px-lg-6 {
+        padding-left: 6rem !important;
+        padding-right: 6rem !important;
+    }
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:active{
+    background-color: rgb(29, 29, 29);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 1.5rem;;
+}
+
+.nav-item .nav-link {
+    font-size: 16pt;
+    font-weight: 300;
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+
+
+
+
+
+.bkg-icon {
+    width: 100px;
+    height: auto;
+}
+
+.ic-black path {
+    fill: black;
+    fill-opacity: 0.9;
+}
+
+.ic-white path {
+    fill: white;
+}
