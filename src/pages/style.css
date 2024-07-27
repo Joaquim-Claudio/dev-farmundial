@@ -1,10 +1,16 @@
+:root {
+    --padding: 1.5rem;
+    --padding-lg-y: 1rem;
+    --padding-lg-x: 6rem;
+}
+
 body {
     font-family: "Nunito";
 }
 
 .navbar-dark {
     background-color: black;
-    opacity: 0.90;
+    opacity: 0.9;
 }
 
 .navbar-brand .logo {
@@ -12,11 +18,8 @@ body {
     height: auto;
 }
 
-@media (min-width: 992px) {
-    .px-lg-6 {
-        padding-left: 6rem !important;
-        padding-right: 6rem !important;
-    }
+.container-fluid {
+    padding: var(--padding) !important;
 }
 
 .navbar-toggler {
@@ -36,26 +39,117 @@ body {
 }
 
 .nav-item .nav-link {
-    font-size: 16pt;
+    font-size: 14pt;
     font-weight: 300;
 }
 
-.img-wrapper {
-    width: 100%;
-    height: fit-content;
-    overflow: hidden;
+.carousel-item {
+    height: 24rem;
+    background-color: #000;
+    color: white;
 }
 
-.thumb-img {
-    width: 100%;
-    height: auto;
+.carousel-body {
+    position: relative;
+    top: 25%;
+    transform: translateY(-50);
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    text-align: center;
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 28pt;
+    padding-bottom: 1rem;
+    font-weight: 700;
+}
+
+.btn {
+    border-radius: 4px;
+    padding: 10px 40px;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+.overlay-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    display: none;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+}
+
+.carousel-indicators [data-bs-target]:not(:last-child) {
+    margin-right: 12px;
 }
 
 
-.top-offset {
+@media (min-width: 992px) {
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+    
+    .navbar-dark {
+        background-color: black;
+        opacity: 0.70;
+    }
+
+    .container-fluid {
+        padding: var(--padding-lg-y) var(--padding-lg-x) !important;
+    }
+
+    .carousel-item {
+        height: 36rem;
+    }
+
+    .carousel-body {
+        position: relative;
+        top: 35%;
+        transform: translateY(-50);
+        padding-left: 14rem;
+        padding-right: 14rem;
+        text-align: start;
+    }
+
+    .intro-text {
+        text-align: start;
+        font-size: 52pt;
+        padding-bottom: 1rem;
+        font-weight: 700;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        display: flex !important;
+        width: fit-content;
+        padding-left: var(--padding);
+        padding-right: var(--padding);
+    }
 
 }
-
 
 
 .bkg-icon {
