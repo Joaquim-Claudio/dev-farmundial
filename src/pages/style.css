@@ -18,8 +18,9 @@ body {
     height: auto;
 }
 
-.container-fluid {
+.container-lg {
     padding: var(--padding) !important;
+    margin: 0;
 }
 
 .navbar-toggler {
@@ -83,6 +84,11 @@ body {
     opacity: 0.5;
 }
 
+.img-fluid {
+    width: 100%;
+    height: 100%;
+}
+
 .carousel-control-next, .carousel-control-prev {
     display: none;
 }
@@ -102,6 +108,58 @@ body {
     margin-right: 12px;
 }
 
+.row {
+    margin: 0 !important;
+}
+
+.row>*{
+    padding: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.section-body {
+    color: white;
+    height: 100%;
+    text-align: center;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.section-body.bkg-beige {
+    background-color: #B68F81;
+}
+
+
+.subsection-header {
+    font-size: 28pt;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.subsection-text {
+    font-size: 16pt;
+    font-weight: 300;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.line-divider {
+    display: block;
+    height: 1px;
+    width: 5rem;
+    background-color: white;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 
 @media (min-width: 992px) {
 
@@ -118,7 +176,7 @@ body {
         opacity: 0.70;
     }
 
-    .container-fluid {
+    .container-lg {
         padding: var(--padding-lg-y) var(--padding-lg-x) !important;
     }
 
@@ -138,8 +196,6 @@ body {
     .intro-text {
         text-align: start;
         font-size: 52pt;
-        padding-bottom: 1rem;
-        font-weight: 700;
     }
 
     .carousel-control-next, .carousel-control-prev {
@@ -147,6 +203,33 @@ body {
         width: fit-content;
         padding-left: var(--padding);
         padding-right: var(--padding);
+    }
+
+    .section-body {
+        padding-top: 2rem;
+        padding-left: 5rem;
+        padding-bottom: 2rem;
+        text-align: start;
+    }
+
+    .section-group {
+        width: 60%;
+    }
+
+    .subsection-header {
+        font-size: 36pt;
+    }
+    
+    .subsection-text {
+        font-size: 16pt;
+        width: 90%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .line-divider {
+        width: 5rem;
+        margin-left: 0;
     }
 
 }
