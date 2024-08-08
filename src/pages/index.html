@@ -16,128 +16,227 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-lg">
-            <a class="navbar-brand pt-0 pb-2 me-5" href="#top">
-                <img class="logo" src="img/logo/logo-dark.png" alt="">
-            </a>
+    <main>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <svg class="ic-white" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_157_78)">
-                        <path d="M30.6667 14.6663H1.33333C0.596954 14.6663 0 15.2632 0 15.9996C0 16.736 0.596954 17.3329 1.33333 17.3329H30.6667C31.403 17.3329 32 16.736 32 15.9996C32 15.2632 31.403 14.6663 30.6667 14.6663Z"/>
-                        <path d="M30.6667 5.33374H1.33333C0.596954 5.33374 0 5.93069 0 6.66707C0 7.40345 0.596954 8.0004 1.33333 8.0004H30.6667C31.403 8.0004 32 7.40345 32 6.66707C32 5.93069 31.403 5.33374 30.6667 5.33374Z"/>
-                        <path d="M30.6667 24H1.33333C0.596954 24 0 24.597 0 25.3333C0 26.0697 0.596954 26.6667 1.33333 26.6667H30.6667C31.403 26.6667 32 26.0697 32 25.3333C32 24.597 31.403 24 30.6667 24Z"/>
-                    </g>
-                </svg>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbar-content">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Sobre nós</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Distribuição de rotas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Endereço</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Valores</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Clientes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Contatos</a>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-lg">
+                <a class="navbar-brand pt-0 pb-2 me-5" href="#top">
+                    <img class="logo" src="img/logo/logo-dark.png" alt="">
+                </a>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg class="ic-white" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_157_78)">
+                            <path d="M30.6667 14.6663H1.33333C0.596954 14.6663 0 15.2632 0 15.9996C0 16.736 0.596954 17.3329 1.33333 17.3329H30.6667C31.403 17.3329 32 16.736 32 15.9996C32 15.2632 31.403 14.6663 30.6667 14.6663Z"/>
+                            <path d="M30.6667 5.33374H1.33333C0.596954 5.33374 0 5.93069 0 6.66707C0 7.40345 0.596954 8.0004 1.33333 8.0004H30.6667C31.403 8.0004 32 7.40345 32 6.66707C32 5.93069 31.403 5.33374 30.6667 5.33374Z"/>
+                            <path d="M30.6667 24H1.33333C0.596954 24 0 24.597 0 25.3333C0 26.0697 0.596954 26.6667 1.33333 26.6667H30.6667C31.403 26.6667 32 26.0697 32 25.3333C32 24.597 31.403 24 30.6667 24Z"/>
+                        </g>
+                    </svg>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbar-content">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Sobre nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Distribuição de rotas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Endereço</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Valores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contatos</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-
-<!--################################################################################################################-->
-
-    <header>
+        </nav>
+    
+    <!--################################################################################################################-->
+    
+        <header>
+            
+            <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+    
+                        <div class="overlay-img" style="background-image: url(img/thumbs/vegetables.png);"></div>
+                        <div class="carousel-body">
+                            <h1 class="intro-text">Frescura, qualidade e sabor num só lugar.</h1>
+                            <a href="#" class="btn btn-lg btn-outline-light">Contate-nos</a>
+                        </div>
+                    </div>
         
-        <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-
-                    <div class="overlay-img" style="background-image: url(img/thumbs/vegetables.png);"></div>
-                    <div class="carousel-body">
-                        <h1 class="intro-text">Frescura, qualidade e sabor num só lugar.</h1>
-                        <a href="#" class="btn btn-lg btn-outline-light">Contate-nos</a>
-                    </div>
-                </div>
+                    <div class="carousel-item">
     
-                <div class="carousel-item">
-
-                    <div class="overlay-img"  style="background-image: url(img/thumbs/cooking.png);"></div>
-                    <div class="carousel-body">
-                        <h1 class="intro-text">A sua fonte de frescura à distância de um clique.</h1>
-                        <a href="#" class="btn btn-lg btn-outline-light">Contate-nos</a>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-
-                    <div class="overlay-img"  style="background-image: url(img/thumbs/img.png);"></div>
-                    <div class="carousel-body">
-                        <h1 class="intro-text">Um toque de frescura ao seu negócio.</h1>
-                        <a href="#" class="btn btn-lg btn-outline-light">Contate-nos</a>
-                    </div>
-                </div>
-            </div>
-    
-            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-    
-            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </header>
-
-<!--################################################################################################################-->
-
-    <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 col-lg-6 order-lg-2">
-                    <div class="section-body bkg-beige">
-                        <div class="section-group">
-                            <h2 class="subsection-header">Sobre nós</h2>
-                            <p class="subsection-text">A Farmundial é uma empresa de referência na 
-                                comercialização e distribuição de produtos hortofrutícolas.</p>
+                        <div class="overlay-img"  style="background-image: url(img/thumbs/cooking.png);"></div>
+                        <div class="carousel-body">
+                            <h1 class="intro-text">A sua fonte de frescura à distância de um clique.</h1>
+                            <a href="#" class="btn btn-lg btn-outline-light">Contate-nos</a>
                         </div>
-
-                        <span class="line-divider"></span>
-
-                        <div class="section-group">
-                            <h2 class="subsection-header">A nossa missão</h2>
-                            <p class="subsection-text">Assumimos o compromisso de garantir frutas e verduras sempre frescos e de alta qualidade. 
-                                Oferecemos igualmente um serviço flexível, eficaz e personalizado.</p>
+                    </div>
+    
+                    <div class="carousel-item">
+    
+                        <div class="overlay-img"  style="background-image: url(img/thumbs/img.png);"></div>
+                        <div class="carousel-body">
+                            <h1 class="intro-text">Um toque de frescura ao seu negócio.</h1>
+                            <a href="#" class="btn btn-lg btn-outline-light">Contate-nos</a>
                         </div>
-                        
                     </div>
                 </div>
-
-                <div class="col-12 col-lg-6 order-lg-1">
-                    <img class="img-fluid" src="img/thumbs/distri.png" alt="Fruit and vegetable harvesting.">
+        
+                <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+        
+                <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </header>
+    
+    <!--################################################################################################################-->
+    
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-6 order-lg-2">
+                        <div class="section-body bkg-beige">
+                            <div class="section-group">
+                                <h2 class="subsection-header">Sobre nós</h2>
+                                <p class="subsection-text">A Farmundial é uma empresa de referência na 
+                                    comercialização e distribuição de produtos hortofrutícolas.</p>
+                            </div>
+    
+                            <span class="line-divider"></span>
+    
+                            <div class="section-group">
+                                <h2 class="subsection-header">A nossa missão</h2>
+                                <p class="subsection-text">Assumimos o compromisso de garantir frutas e verduras sempre frescos e de alta qualidade. 
+                                    Oferecemos igualmente um serviço flexível, eficaz e personalizado.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-lg-6 order-lg-1">
+                        <img class="img-fluid" src="img/thumbs/distri.png" alt="Fruit and vegetable harvesting.">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    
+    <!--################################################################################################################-->
+    
+        <section class="p-lg-6 bkg-green">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="card-lg section-body mb-3">
+                        <div class="col-12">
+                            <div class="section-group-lg">
+                                <h5 class="subsection-header">Distribuição de rotas</h5>
+                                <p class="subsection-text">
+                                    Agendamos novas rotas e entregamos conforme a necessidade do cliente. 
+                                    A nossa ampla oferta inclui cabazes, participação em eventos, fornecimento para refeitórios, entre outros.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    <!--################################################################################################################-->
+    
+        <section class="parallax-wrapper">
+
+            <img src="img/thumbs/3.bkg-img.png" class="parallax-layer background" alt="Background image.">
+
+            <div class="container-fluid value-section">
+                <div class="row justify-content-between foreground">
+                    
+                    <div class="col-12 col-lg-2 ">
+                        <div class="value-group"> 
+                            <img src="img/icons/ic-quality.svg" class="icon" alt="">
+                            <h3 class="title">Qualidade</h3>
+                            <p class="text">Frutas e legumes com garantia de frescura e sabor inigualável.</p>
+                        </div>
+                    </div>
+
+                    <span class="line-divider-large"></span>
+    
+                    <div class="col-12 col-lg-2">
+                        <div class="value-group"> 
+                            <img src="img/icons/ic-service.svg" class="icon" alt="">
+                            <h3 class="title">Serviço</h3>
+                            <p class="text">A nossa simpatia e atendimento prometem responder de forma rápida e eficaz aos seus pedidos.</p>
+                        </div>
+                    </div>
+
+                    <span class="line-divider-large"></span>
+
+                    <div class="col-12 col-lg-2">
+                        <div class="value-group"> 
+                            <img src="img/icons/ic-price.svg" class="icon" alt="">
+                            <h3 class="title">Preço competitivo</h3>
+                            <p class="text">As nossas propostas são sempre negociáveis.</p>
+                        </div>
+                    </div>
+
+                    <span class="line-divider-large"></span>
+
+                    <div class="col-12 col-lg-2">
+                        <div class="value-group"> 
+                            <img src="img/icons/ic-loyalty.svg" class="icon" alt="">
+                            <h3 class="title">Lealdade</h3>
+                            <p class="text">Para nós, a prioridade é garantir a satisfação a longo prazo dos nossos clientes.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    
+    
+    <!--################################################################################################################-->
+    
+        <section class="pb-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-6 order-lg-2">
+                        <div class="section-body bkg-beige">
+                            <div class="section-group">
+                                <h2 class="subsection-header">Encontre-nos no MARL</h2>
+                                <p class="subsection-text">Pavilhão A6 - Mercado Abastecedor da Região de Lisboa (MARL)</p>
+                                <p> - Se existe em Portugal, existe no MARL.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-lg-6 order-lg-1">
+                        <img class="img-fluid" src="img/thumbs/marl.png" alt="Marl" style="height: 26rem;">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
