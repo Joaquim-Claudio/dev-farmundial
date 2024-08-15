@@ -1,3 +1,4 @@
+/* General rules */
 :root {
     --padding: 1.5rem;
     --padding-lg-y: 1rem;
@@ -8,6 +9,100 @@ body {
     font-family: "Nunito";
     margin: 0;
 }
+
+.row {
+    margin: 0 !important;
+}
+
+.row>*{
+    padding: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.g-6, .gy-6 {
+    --bs-gutter-y: 4rem;
+}
+
+
+.section-body {
+    color: white;
+    height: fit-content;
+    text-align: center;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+
+
+.section-header {
+    font-size: 26pt;
+    font-weight: 700;
+}
+
+
+.subsection-header {
+    font-size: 28pt;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.subsection-text {
+    font-size: 16pt;
+    font-weight: 300;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.line-divider {
+    display: block;
+    height: 1px;
+    width: 5rem;
+    background-color: white;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.section-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 20rem;
+}
+
+
+main {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+
+.bkg-beige {
+    background-color: #B68F81;
+}
+
+.bkg-green {
+    background-color: #B3C498;
+}
+
+.bkg-pink {
+    background-color: #C87F9A;
+}
+
+.text-pink {
+    color: #F9C8B4;
+}
+
+/* Navbar rules */
 
 .navbar-dark {
     background-color: black;
@@ -44,6 +139,8 @@ body {
     font-size: 14pt;
     font-weight: 300;
 }
+
+/* Carousel rules */
 
 .carousel-item {
     height: 24rem;
@@ -85,10 +182,6 @@ body {
     opacity: 0.5;
 }
 
-.img-fluid {
-    width: 100%;
-    height: 100%;
-}
 
 .carousel-control-next, .carousel-control-prev {
     display: none;
@@ -109,73 +202,8 @@ body {
     margin-right: 12px;
 }
 
-.row {
-    margin: 0 !important;
-}
 
-.row>*{
-    padding: 0;
-}
-
-.container-fluid {
-    padding: 0;
-}
-
-.section-body {
-    color: white;
-    height: 100%;
-    text-align: center;
-    padding-left: var(--padding);
-    padding-right: var(--padding);
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-
-.section-body.bkg-beige {
-    background-color: #B68F81;
-}
-
-.bkg-green {
-    background-color: #B3C498;
-}
-
-
-
-
-.subsection-header {
-    font-size: 28pt;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-}
-
-.subsection-text {
-    font-size: 16pt;
-    font-weight: 300;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.line-divider {
-    display: block;
-    height: 1px;
-    width: 5rem;
-    background-color: white;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-
-
-
-main {
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 10px;
-}
+/* Values section */
 
 .parallax-wrapper {
     position: relative;
@@ -196,7 +224,7 @@ main {
 }
 
 .background {
-    transform: translateZ(-1.25px) scale(1.125);
+    transform: translateZ(-4px) scale(1.4);
 }
 
 .foreground {
@@ -247,6 +275,36 @@ main {
     margin-right: auto;
 }
 
+
+/* Clients section */
+
+.client-card {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+    margin-right: 0;
+    border-radius: 8px;
+}
+
+.card-img {
+    max-width: 100%;
+    height: 18rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+}
+
+.card-title {
+    color: #811046;
+    font-size: 20pt;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+/* Large devices optimized */
 
 @media (min-width: 992px) {
     .p-lg-6 {
@@ -301,9 +359,9 @@ main {
     }
 
     .section-body {
-        padding-top: 2rem;
+        padding-top: 4rem;
         padding-left: 5rem;
-        padding-bottom: 2rem;
+        padding-bottom: 4rem;
         text-align: start;
     }
 
@@ -315,6 +373,10 @@ main {
         width: 100%;
     }
 
+    .section-header {
+        font-size: 36pt;
+    }
+
     .subsection-header {
         font-size: 36pt;
     }
@@ -324,6 +386,11 @@ main {
         width: 90%;
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .section-img {
+        max-width: 100%;
+        height: 100%;
     }
 
     .line-divider {
@@ -376,6 +443,14 @@ main {
         font-weight: 300;
         padding-left: 0 !important;
         padding-right: 0 !important;
+    }
+
+    .client-card {
+        margin-right: 4rem;
+    }
+    
+    .card-img {
+        height: 20rem;
     }
 
 }
