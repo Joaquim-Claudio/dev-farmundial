@@ -26,6 +26,16 @@ body {
     --bs-gutter-y: 4rem;
 }
 
+.p-6, .pb-6 {
+    padding-bottom: 7rem;
+}
+
+
+footer .container-sm>* {
+    margin-left: 10rem !important;
+    margin-right: 10rem !important;
+}
+
 
 .section-body {
     color: white;
@@ -303,6 +313,70 @@ main {
     padding-bottom: 2rem;
 }
 
+footer {
+    /* background-color: #000; */
+    color: rgb(220, 220, 220);
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+
+    background-image: url(img/thumbs/fruits-on-a-table.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.50);
+}
+
+footer .logo {
+    width: 160px;
+    height: auto;
+    margin-bottom: 4rem;
+}
+
+.co-info-header {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 16pt;
+}
+
+.co-info-text {
+    margin-bottom: 0.2rem;
+    font-weight: 200;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+.custom-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.spur {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 14pt;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.copyright {
+    text-align: center;
+    font-weight: 200;
+    font-size: 10pt;
+}
+
+.social-media {
+    display: flex;
+    flex-basis: auto;
+}
+
+.social-media-item:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+.social-media-item .icon {
+    width: 36px;
+    height: auto;
+}
 
 /* Large devices optimized */
 
