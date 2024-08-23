@@ -11,7 +11,7 @@ body {
 }
 
 .row {
-    margin: 0 !important;
+    margin: 0;
 }
 
 .row>*{
@@ -27,13 +27,20 @@ body {
 }
 
 .p-6, .pb-6 {
-    padding-bottom: 7rem;
+    padding-bottom: 7rem !important;
 }
 
+.m-45, .mb-45 {
+    margin-bottom: 2rem !important;
+} 
 
-footer .container-sm>* {
-    margin-left: 10rem !important;
-    margin-right: 10rem !important;
+.m-6, .mb-6 {
+    margin-bottom: 4rem !important;
+}
+
+footer .container-sm {
+    padding-left: var(--padding);
+    padding-right: var(--padding);
 }
 
 
@@ -306,7 +313,7 @@ main {
 
 .card-title {
     color: #811046;
-    font-size: 20pt;
+    font-size: 16pt;
     font-weight: 700;
     text-align: center;
     padding-top: 2rem;
@@ -314,7 +321,6 @@ main {
 }
 
 footer {
-    /* background-color: #000; */
     color: rgb(220, 220, 220);
     padding-top: 4rem;
     padding-bottom: 1rem;
@@ -327,33 +333,47 @@ footer {
 }
 
 footer .logo {
-    width: 160px;
-    height: auto;
-    margin-bottom: 4rem;
+    display: none;
+}
+
+.content-wrapper {
+    justify-content: center;
+    text-align: center;
 }
 
 .co-info-header {
     margin-bottom: 1rem;
     font-weight: 700;
-    font-size: 16pt;
+    font-size: 18pt;
+}
+
+.co-info-subheader {
+    font-size: 12pt;
+    margin-bottom: 0.75rem;
+    font-weight: 400;
 }
 
 .co-info-text {
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.5rem;
     font-weight: 200;
     text-decoration: none;
     font-size: 12pt;
 }
 
+.co-info-text .ic-redirect {
+    width: 12px;
+    height: auto;
+    margin-left: 0.5rem;
+}
+
 .custom-link {
-    text-decoration: none;
     color: inherit;
 }
 
 .spur {
     text-align: center;
     margin-bottom: 2rem;
-    font-size: 14pt;
+    font-size: 12pt;
     font-weight: 700;
     letter-spacing: 0.3px;
 }
@@ -367,15 +387,27 @@ footer .logo {
 .social-media {
     display: flex;
     flex-basis: auto;
+    justify-content: center;
 }
 
 .social-media-item:not(:last-child) {
-    margin-right: 0.5rem;
+    margin-right: 1rem;
+}
+
+.icon:hover {
+    .bkg {
+        fill: rgba(255, 255, 255, 0.4);
+    }
+
+    .inner {
+        fill: rgba(255, 255, 255, 0.9);
+    }
 }
 
 .social-media-item .icon {
     width: 36px;
     height: auto;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Large devices optimized */
@@ -383,6 +415,11 @@ footer .logo {
 @media (min-width: 992px) {
     .p-lg-6 {
         padding: 4rem 6rem !important;
+    }
+
+    footer .container-sm>* {
+        margin-left: 8rem !important;
+        margin-right: 8rem !important;
     }
 
     .value-section {
@@ -525,6 +562,43 @@ footer .logo {
     
     .card-img {
         height: 20rem;
+    }
+
+    footer .logo {
+        display: block;
+        width: 160px;
+        height: auto;
+        margin-bottom: 4rem;
+    }
+
+    .content-wrapper {
+        justify-content: space-between;
+        text-align: start;
+    }
+
+    .co-info-header {
+        font-size: 16pt;
+    }
+
+    .co-info-subheader {
+        margin-bottom: 0.3rem;
+    }
+
+    .spur {
+        font-size: 14pt;
+    }
+
+    .social-media {
+        justify-content: start;
+    }
+
+    .social-media-item:not(:last-child) {
+        margin-right: 0.8rem;
+    }
+
+    .social-media-item .icon {
+        width: 40px;
+        height: auto;
     }
 
 }
