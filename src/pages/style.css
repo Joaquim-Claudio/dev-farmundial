@@ -44,58 +44,6 @@ footer .container-sm {
 }
 
 
-.section-body {
-    color: white;
-    height: fit-content;
-    text-align: center;
-    padding-left: var(--padding);
-    padding-right: var(--padding);
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
-
-
-
-.section-header {
-    font-size: 26pt;
-    font-weight: 700;
-}
-
-
-.subsection-header {
-    font-size: 28pt;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-}
-
-.subsection-text {
-    font-size: 16pt;
-    font-weight: 300;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.line-divider {
-    display: block;
-    height: 1px;
-    width: 5rem;
-    background-color: white;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.section-img {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100%;
-    height: 20rem;
-}
-
-
 main {
     height: 100vh;
     overflow-x: hidden;
@@ -126,6 +74,13 @@ main {
     opacity: 0.9;
 }
 
+
+.navbar-brand {
+    padding-top: 0 !important;
+    padding-bottom: .5rem !important;
+    margin-right: 3rem !important;
+}
+
 .navbar-brand .logo {
     width: 8rem;
     height: auto;
@@ -134,6 +89,25 @@ main {
 .container-lg {
     padding: var(--padding) !important;
     margin: 0;
+}
+
+.sidenav {
+    background-color: #050505;
+    color: rgba(255, 255, 255);
+    position: fixed;
+    height: 100%;
+    width: 0;
+    z-index: 1040;
+    top: 0;
+    right: 0;
+    padding-top: 2rem;
+    transition: 0.5s;
+    overflow-x: hidden;
+}
+
+.side-navbar {
+    padding-top: 8rem;
+    padding-left: 5rem;
 }
 
 .navbar-toggler {
@@ -148,13 +122,31 @@ main {
     box-shadow: none;
 }
 
+.sidenav .nav-close {
+    background: transparent;
+    padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+    position: absolute;
+    right: 1.5rem;
+    border: none;
+}
+
+.side-navbar .nav-close:active {
+    background-color: rgb(255, 255, 255, 0.9);
+}
+
 .nav-item:not(:last-child) {
     margin-right: 1.5rem;;
 }
 
 .nav-item .nav-link {
-    font-size: 14pt;
-    font-weight: 300;
+    font-size: 20pt;
+    font-weight: 600;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nav-item .nav-link:hover {
+    color: white
 }
 
 /* Carousel rules */
@@ -162,13 +154,12 @@ main {
 .carousel-item {
     height: 24rem;
     background-color: #000;
-    color: white;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .carousel-body {
     position: relative;
     top: 25%;
-    transform: translateY(-50);
     padding-left: var(--padding);
     padding-right: var(--padding);
     text-align: center;
@@ -219,6 +210,57 @@ main {
     margin-right: 12px;
 }
 
+/* Section general rules */
+
+.section-body {
+    color: white;
+    height: fit-content;
+    text-align: center;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.section-header {
+    font-size: 26pt;
+    font-weight: 700;
+}
+
+
+.subsection-header {
+    font-size: 28pt;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.subsection-text {
+    font-size: 16pt;
+    font-weight: 300;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.line-divider {
+    display: block;
+    height: 1px;
+    width: 5rem;
+    background-color: white;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.section-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 20rem;
+}
+
 
 /* Values section */
 
@@ -246,6 +288,7 @@ main {
 
 .foreground {
     color: white;
+    justify-content: space-between;
 }
 
 .value-section {
@@ -271,7 +314,6 @@ main {
 .value-group .title {
     font-size: 20pt;
     font-weight: 600;
-    letter-spacing: 1.5px;
 }
 
 .value-group .text {
@@ -294,6 +336,10 @@ main {
 
 
 /* Clients section */
+
+.client-card-wrapper {
+    justify-content: center;
+}
 
 .client-card {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
@@ -410,198 +456,6 @@ footer .logo {
     transition: all 0.3s ease-in-out;
 }
 
-/* Large devices optimized */
-
-@media (min-width: 992px) {
-    .p-lg-6 {
-        padding: 4rem 6rem !important;
-    }
-
-    footer .container-sm>* {
-        margin-left: 8rem !important;
-        margin-right: 8rem !important;
-    }
-
-    .value-section {
-        padding-left: 6rem !important;
-        padding-right: 6rem !important;
-    }
-
-    .navbar {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
-    
-    .navbar-dark {
-        background-color: black;
-        opacity: 0.70;
-    }
-
-    .container-lg {
-        padding: var(--padding-lg-y) var(--padding-lg-x) !important;
-    }
-
-    .carousel-item {
-        height: 36rem;
-    }
-
-    .carousel-body {
-        position: relative;
-        top: 35%;
-        transform: translateY(-50);
-        padding-left: 14rem;
-        padding-right: 14rem;
-        text-align: start;
-    }
-
-    .intro-text {
-        text-align: start;
-        font-size: 52pt;
-    }
-
-    .carousel-control-next, .carousel-control-prev {
-        display: flex !important;
-        width: fit-content;
-        padding-left: var(--padding);
-        padding-right: var(--padding);
-    }
-
-    .section-body {
-        padding-top: 4rem;
-        padding-left: 5rem;
-        padding-bottom: 4rem;
-        text-align: start;
-    }
-
-    .section-group {
-        width: 60%;
-    }
-
-    .section-group-lg {
-        width: 100%;
-    }
-
-    .section-header {
-        font-size: 36pt;
-    }
-
-    .subsection-header {
-        font-size: 36pt;
-    }
-    
-    .subsection-text {
-        font-size: 16pt;
-        width: 90%;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .section-img {
-        max-width: 100%;
-        height: 100%;
-    }
-
-    .line-divider {
-        width: 5rem;
-        margin-left: 0;
-    }
-
-    .line-divider-large {
-        display: none;
-    }
-
-    .card-lg {
-        padding: 6rem;
-        border-width: 1px;
-        border-color: grey;
-        border-radius: 4px;
-        background-color: #000000bf;
-        color: white;
-    }
-
-    
-    .value-section {
-        text-align: start;
-        padding-top: 8rem;
-        padding-bottom: 8rem;
-    }
-
-    .value-group {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-
-    .value-group >:not(:last-child) {
-        margin-bottom: 1rem;
-    }
-
-    .value-group .icon {
-        width: 52px;
-        height: auto;
-    }
-
-    .value-group .title {
-        font-size: 16pt;
-        font-weight: 700;
-        letter-spacing: normal;
-    }
-
-    .value-group .text {
-        font-size: 16pt;
-        font-weight: 300;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-
-    .client-card {
-        margin-right: 4rem;
-    }
-    
-    .card-img {
-        height: 20rem;
-    }
-
-    footer .logo {
-        display: block;
-        width: 160px;
-        height: auto;
-        margin-bottom: 4rem;
-    }
-
-    .content-wrapper {
-        justify-content: space-between;
-        text-align: start;
-    }
-
-    .co-info-header {
-        font-size: 16pt;
-    }
-
-    .co-info-subheader {
-        margin-bottom: 0.3rem;
-    }
-
-    .spur {
-        font-size: 14pt;
-    }
-
-    .social-media {
-        justify-content: start;
-    }
-
-    .social-media-item:not(:last-child) {
-        margin-right: 0.8rem;
-    }
-
-    .social-media-item .icon {
-        width: 40px;
-        height: auto;
-    }
-
-}
 
 
 
