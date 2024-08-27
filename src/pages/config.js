@@ -12,11 +12,26 @@ var SideNav = {
     }
 }
 
-window.addEventListener("DOMContentLoaded", (event) => {
+window.addEventListener("DOMContentLoaded", function(event) {
 
     Array.from(document.getElementsByClassName("sn-1")).forEach(link => {
         link.addEventListener("click", ()=> {
             SideNav.collapse();
         })
     })
+
+    
+})
+
+const mainElement = document.querySelector("main")
+
+mainElement.addEventListener("scroll", function() {
+
+    if(mainElement.scrollTop >= 200) {
+        document.querySelector(".navbar").classList.add("retracted");
+
+    } else {
+        
+        document.querySelector(".navbar").classList.remove("retracted");
+    }
 })

@@ -10,6 +10,10 @@ body {
     margin: 0;
 }
 
+header {
+    padding-top: 6.5rem;
+}
+
 .row {
     margin: 0;
 }
@@ -69,9 +73,18 @@ main {
 
 /* Navbar rules */
 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    transition: 0.5s;
+}
+
 .navbar-dark {
     background-color: black;
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 
@@ -87,7 +100,7 @@ main {
 }
 
 .container-lg {
-    padding: var(--padding) !important;
+    padding: var(--padding);
     margin: 0;
 }
 
@@ -130,9 +143,19 @@ main {
     border: none;
 }
 
-.side-navbar .nav-close:active {
-    background-color: rgb(255, 255, 255, 0.9);
+.sidenav .nav-close:active {
+    background-color: rgb(255, 255, 255, 0.1);
 }
+
+.sidenav .btn-contact {
+    position: absolute;
+    right: 2.25rem;
+    bottom: 6rem;
+    padding: 0;
+    border-radius: 100%;
+}
+
+
 
 .nav-item:not(:last-child) {
     margin-right: 1.5rem;;
@@ -456,7 +479,31 @@ footer .logo {
     transition: all 0.3s ease-in-out;
 }
 
+.shown {
+    display: flex;
+}
 
+.hidden {
+    display: none;
+}
+
+.retracted {
+    opacity: 0.9;
+
+    .container-lg {
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+    }
+
+    .navbar-brand .logo {
+        width: 6rem;
+    }
+
+    .ic-nav {
+        width: 24px;
+        height: 24px;
+    }
+}
 
 
 

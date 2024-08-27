@@ -4,6 +4,11 @@
 /* #TODO implementation required */
 
 @media (min-width: 768px) and (max-width: 992px) {
+
+    header {
+        padding-top: 0;
+    }
+
     .p-lg-6 {
         padding: 4rem 6rem !important;
     }
@@ -15,10 +20,6 @@
 
     .navbar {
         position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
     }
     
     .navbar-dark {
@@ -40,7 +41,7 @@
 
     .sidenav .nav-close {
         padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
-        right: 4rem;
+        right: 3.5rem;
     }
     
     .side-navbar {
@@ -48,8 +49,13 @@
         padding-left: 3.75rem;
     }
 
+    .sidenav .btn-contact .ic {
+        width: 56px;
+        height: 56px;
+    }
+
     .container-lg {
-        padding: 1rem 3rem !important;
+        padding: 1rem 3rem;
     }
 
     .carousel-item {
@@ -198,6 +204,24 @@
     .social-media-item .icon {
         width: 40px;
         height: auto;
+    }
+
+    .retracted {
+        opacity: 0.95;
+
+        .container-lg {
+            padding-top: 0.4rem;
+            padding-bottom: 0.4rem;
+        }
+
+        .navbar-brand .logo {
+            width: 6rem;
+        }
+
+        .ic-nav {
+            width: 24px;
+            height: 24px;
+        }
     }
 
 }
