@@ -499,7 +499,7 @@ footer .logo {
 
 .retracted {
     opacity: 0.9;
-
+    position: fixed;
     .container-lg {
         padding-top: 0.6rem;
         padding-bottom: 0.6rem;
