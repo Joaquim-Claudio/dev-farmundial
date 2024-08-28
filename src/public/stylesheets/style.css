@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    /* padding-top: 6.5rem; */
+    padding-top: 6.5rem;
 }
 
 .row {
@@ -54,8 +54,6 @@ main {
     overflow-x: hidden;
     overflow-y: auto;
     perspective: 10px;
-    padding-top: 6.5rem;
-    padding-bottom: 4.575rem;
 }
 
 .bkg-beige {
@@ -516,6 +514,10 @@ footer .logo {
         width: 24px;
         height: 24px;
     }
+
+    header {
+        padding-top: 0;
+    }
 }
 
 
@@ -570,9 +572,8 @@ footer .logo {
 /* Medium devices optimized */
 
 @media (min-width: 768px) and (max-width: 992px) {
-    main {
+    header {
         padding-top: 0;
-        padding-bottom: 0;
     }
     
     .p-lg-6 {
@@ -786,9 +787,8 @@ footer .logo {
 
 @media (min-width: 992px) {
 
-    main {
+    header {
         padding-top: 0;
-        padding-bottom: 0;
     }
 
     .p-lg-6 {
