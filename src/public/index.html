@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="img" href="./images/logo/logo-dark-sm.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./stylesheets/style.css">
+
+    <title>Farmundial - Produtos hortofrutícolas</title>
+</head>
+
+<body>
+
+    <div id="sideNav" class="sidenav">
+
+        <button type="button" class="btn nav-close" onclick="SideNav.collapse()">
+            <svg class="ic ic-nav" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_195_111)">
+                    <path d="M23.707 0.293153C23.5195 0.105682 23.2652 0.000366211 23 0.000366211C22.7349 0.000366211 22.4806 0.105682 22.293 0.293153L12 10.5862L1.70703 0.293153C1.5195 0.105682 1.26519 0.000366211 1.00003 0.000366211C0.734866 0.000366211 0.480558 0.105682 0.293031 0.293153C0.10556 0.48068 0.000244141 0.734988 0.000244141 1.00015C0.000244141 1.26532 0.10556 1.51963 0.293031 1.70715L10.586 12.0002L0.293031 22.2932C0.10556 22.4807 0.000244141 22.735 0.000244141 23.0002C0.000244141 23.2653 0.10556 23.5196 0.293031 23.7072C0.480558 23.8946 0.734866 23.9999 1.00003 23.9999C1.26519 23.9999 1.5195 23.8946 1.70703 23.7072L12 13.4142L22.293 23.7072C22.4806 23.8946 22.7349 23.9999 23 23.9999C23.2652 23.9999 23.5195 23.8946 23.707 23.7072C23.8945 23.5196 23.9998 23.2653 23.9998 23.0002C23.9998 22.735 23.8945 22.4807 23.707 22.2932L13.414 12.0002L23.707 1.70715C23.8945 1.51963 23.9998 1.26532 23.9998 1.00015C23.9998 0.734988 23.8945 0.48068 23.707 0.293153Z" fill="white"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_195_111">
+                        <rect width="24" height="24" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg>
+            
+        </button>
+
+        <nav class="side-navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#about-us" class="nav-link sn-1">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#routes" class="nav-link sn-1">Distribuição de rotas</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#our-values" class="nav-link sn-1">Os nossos valores</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#our-clients" class="nav-link sn-1">Os nossos clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#find-us" class="nav-link sn-1">Endereço</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link sn-1">Contactos</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <button class="btn btn-contact" type="button">
+            <svg class="ic" width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 37.5C0 16.7893 16.7893 0 37.5 0C58.2107 0 75 16.7893 75 37.5C75 58.2107 58.2107 75 37.5 75C16.7893 75 0 58.2107 0 37.5Z" fill="#B68F81"/>
+                    <g clip-path="url(#clip0_195_129)">
+                <path d="M50.7919 22.597C48.6802 20.8397 46.2274 19.5389 43.5882 18.7765C40.9489 18.014 38.1803 17.8065 35.4569 18.167C30.4186 18.8215 25.8183 21.3689 22.5901 25.292C19.3618 29.215 17.7475 34.2197 18.0751 39.2897C18.4026 44.3597 20.6474 49.115 24.3536 52.59C28.0598 56.0651 32.9496 57.9995 38.0302 58.0003H49.6669C51.8762 57.9976 53.9943 57.1188 55.5565 55.5566C57.1187 53.9944 57.9976 51.8763 58.0002 49.667V36.8486V36.7436C57.8238 34.0194 57.0936 31.3597 55.8542 28.9273C54.6148 26.4949 52.8922 24.3409 50.7919 22.597ZM31.3335 29.667H38.0002C38.4422 29.667 38.8662 29.8426 39.1787 30.1551C39.4913 30.4677 39.6669 30.8916 39.6669 31.3336C39.6669 31.7757 39.4913 32.1996 39.1787 32.5121C38.8662 32.8247 38.4422 33.0003 38.0002 33.0003H31.3335C30.8915 33.0003 30.4676 32.8247 30.155 32.5121C29.8425 32.1996 29.6669 31.7757 29.6669 31.3336C29.6669 30.8916 29.8425 30.4677 30.155 30.1551C30.4676 29.8426 30.8915 29.667 31.3335 29.667ZM44.6669 46.3336H31.3335C30.8915 46.3336 30.4676 46.158 30.155 45.8455C29.8425 45.5329 29.6669 45.109 29.6669 44.667C29.6669 44.2249 29.8425 43.801 30.155 43.4884C30.4676 43.1759 30.8915 43.0003 31.3335 43.0003H44.6669C45.1089 43.0003 45.5328 43.1759 45.8454 43.4884C46.1579 43.801 46.3335 44.2249 46.3335 44.667C46.3335 45.109 46.1579 45.5329 45.8454 45.8455C45.5328 46.158 45.1089 46.3336 44.6669 46.3336ZM44.6669 39.667H31.3335C30.8915 39.667 30.4676 39.4914 30.155 39.1788C29.8425 38.8662 29.6669 38.4423 29.6669 38.0003C29.6669 37.5583 29.8425 37.1343 30.155 36.8218C30.4676 36.5092 30.8915 36.3336 31.3335 36.3336H44.6669C45.1089 36.3336 45.5328 36.5092 45.8454 36.8218C46.1579 37.1343 46.3335 37.5583 46.3335 38.0003C46.3335 38.4423 46.1579 38.8662 45.8454 39.1788C45.5328 39.4914 45.1089 39.667 44.6669 39.667Z" fill="white"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_195_129">
+                        <rect width="40" height="40" fill="#B68F81" transform="translate(18 18)"/>
+                    </clipPath>
+                </defs>
+            </svg>
+            
+        </button>
+
+    </div>
+    <!-- ################################################################################################################ -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-lg">
+            <a class="navbar-brand" href="#top">
+                <img class="logo" src="./images/logo/logo-dark.png" alt>
+            </a>
+
+            <button class="navbar-toggler" type="button" aria-label="Side navigation" onclick="SideNav.expand()">
+                <svg class="ic ic-nav ic-white" width="32" height="32"
+                    viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_157_78)">
+                        <path
+                            d="M30.6667 14.6663H1.33333C0.596954 14.6663 0 15.2632 0 15.9996C0 16.736 0.596954 17.3329 1.33333 17.3329H30.6667C31.403 17.3329 32 16.736 32 15.9996C32 15.2632 31.403 14.6663 30.6667 14.6663Z" />
+                        <path
+                            d="M30.6667 5.33374H1.33333C0.596954 5.33374 0 5.93069 0 6.66707C0 7.40345 0.596954 8.0004 1.33333 8.0004H30.6667C31.403 8.0004 32 7.40345 32 6.66707C32 5.93069 31.403 5.33374 30.6667 5.33374Z" />
+                        <path
+                            d="M30.6667 24H1.33333C0.596954 24 0 24.597 0 25.3333C0 26.0697 0.596954 26.6667 1.33333 26.6667H30.6667C31.403 26.6667 32 26.0697 32 25.3333C32 24.597 31.403 24 30.6667 24Z" />
+                    </g>
+                </svg>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#about-us" class="nav-link">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#routes" class="nav-link">Distribuição de rotas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#our-values" class="nav-link">Valores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#our-clients" class="nav-link">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#find-us" class="nav-link">Endereço</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contatos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>    
+    </nav>
+
+    <main>
+        <!--################################################################################################################-->
+
+        <header id="top">
+
+            <div id="mainCarousel"
+                class="carousel slide carousel-fade"
+                data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button"
+                        data-bs-target="#mainCarousel"
+                        data-bs-slide-to="0" class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"></button>
+                    <button type="button"
+                        data-bs-target="#mainCarousel"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button"
+                        data-bs-target="#mainCarousel"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                        <div class="overlay-img"
+                            style="background-image: url(./images/thumbs/vegetables.png);"></div>
+                        <div class="carousel-body">
+                            <h1 class="intro-text">Frescura,
+                                qualidade e sabor num só lugar.</h1>
+                            <a href="#contact" class="btn btn-lg btn-outline-light">Contacte-nos</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <div class="overlay-img"
+                            style="background-image: url(./images/thumbs/cooking.png);"></div>
+                        <div class="carousel-body">
+                            <h1 class="intro-text">A sua fonte de
+                                frescura à distância de um
+                                clique.</h1>
+                            <a href="#contact" class="btn btn-lg btn-outline-light">Contacte-nos</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+
+                        <div class="overlay-img"
+                            style="background-image: url(./images/thumbs/img.png);"></div>
+                        <div class="carousel-body">
+                            <h1 class="intro-text">Um toque de
+                                frescura ao seu negócio.</h1>
+                            <a href="#contact" class="btn btn-lg btn-outline-light">Contacte-nos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button"
+                    data-bs-target="#mainCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button"
+                    data-bs-target="#mainCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </header>            
+
+        <!--################################################################################################################-->
+
+        <section id="about-us">
+            <div class="container-fluid">
+                <div class="row section-wrapper">
+                    <div class="col-12 col-lg-6 order-lg-2">
+                        <div class="section-body bkg-beige">
+                            <div class="section-group">
+                                <h2 class="subsection-header">Sobre nós</h2>
+                                <p class="subsection-text">A Farmundial é uma empresa de referência na comercialização 
+                                    e distribuição de produtos hortofrutícolas.</p>
+                            </div>
+
+                            <span class="line-divider"></span>
+
+                            <div class="section-group">
+                                <h2 class="subsection-header">A nossa missão</h2>
+                                <p class="subsection-text">Assumimos o compromisso de garantir frutas e verduras sempre frescos e de alta qualidade.
+                                    Oferecemos igualmente um serviço flexível, eficaz e personalizado.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 order-lg-1">
+                        <div class="section-img"
+                            style="background-image: url(./images/thumbs/collecting-vegetables.png);"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--################################################################################################################-->
+
+        <section id="routes" class="p-lg-6 bkg-green">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="card-lg section-body mb-3">
+                        <div class="col-12">
+                            <div class="section-group">
+                                <h5 class="subsection-header">Distribuição de rotas</h5>
+                                <p class="subsection-text">Agendamos novas rotas e entregamos conforme a necessidade do cliente.
+                                    A nossa ampla oferta inclui cabazes, participação em eventos, fornecimento para refeitórios, entre outros.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--################################################################################################################-->
+
+        <section id="our-values" class="parallax-wrapper">
+
+            <img src="./images/thumbs/bkg-img.png"
+                class="parallax-layer background"
+                alt="Background image.">
+
+            <div class="container-fluid value-section">
+                <div class="row gy-5 foreground">
+
+                    <div class="col-12 col-md-4 col-lg-2">
+                        <div class="value-group">
+                            <img src="./images/icons/ic-quality.svg"
+                                class="icon" alt>
+                            <h3 class="title">Qualidade</h3>
+                            <p class="text">Frutas e legumes com garantia de frescura e sabor inigualável.</p>
+                        </div>
+                    </div>
+
+                    <span class="line-divider-large"></span>
+
+                    <div
+                        class="col-12 col-md-4 offset-md-1 offset-lg-0 col-lg-2">
+                        <div class="value-group">
+                            <img src="./images/icons/ic-service.svg"
+                                class="icon" alt>
+                            <h3 class="title">Serviço</h3>
+                            <p class="text">A nossa simpatia e atendimento prometem responder de forma rápida e eficaz aos seus pedidos.</p>
+                        </div>
+                    </div>
+
+                    <span class="line-divider-large"></span>
+
+                    <div class="col-12 col-md-4 col-lg-2">
+                        <div class="value-group">
+                            <img src="./images/icons/ic-price.svg"
+                                class="icon" alt>
+                            <h3 class="title">Preço justo</h3>
+                            <p class="text">As nossas propostas são sempre negociáveis.</p>
+                        </div>
+                    </div>
+
+                    <span class="line-divider-large"></span>
+
+                    <div
+                        class="col-12 col-md-4 offset-md-1 offset-lg-0 col-lg-2">
+                        <div class="value-group">
+                            <img src="./images/icons/ic-loyalty.svg"
+                                class="icon" alt>
+                            <h3 class="title">Lealdade</h3>
+                            <p class="text">Para nós, a prioridade é garantir a satisfação a longo prazo dos nossos clientes.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!--################################################################################################################-->
+
+        <section id="find-us">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-6 order-lg-2">
+                        <div class="section-body bkg-pink">
+                            <div class="section-group">
+                                <h2 class="subsection-header">Encontre-nos no MARL</h2>
+                                <p class="subsection-text">Pavilhão A06 - Mercado Abastecedor da Região de Lisboa (MARL)</p>
+                                <p> - Se existe em Portugal, existe no MARL.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 order-lg-1">
+                        <div class="section-img"
+                            style="background-image: url(./images/thumbs/marl-3.jpg);"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--################################################################################################################-->
+
+        <section id="our-clients" class="pb-6">
+            <div class="container-fluid">
+
+                <div class="section-body client-section">
+
+                    <h2 class="section-header text-pink">Os nossos clientes</h2>
+
+                    <div class="row client-card-wrapper gy-6">
+
+                        <div class="col-11 col-md-5 col-lg-3">
+
+                            <div class="client-card">
+                                <div class="card-img"
+                                    style="background-image: url(./images/clients/hotel.png);"></div>
+                                <h3 class="card-title">Hotéis</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-11 col-md-5 col-lg-3">
+                            <div class="client-card">
+                                <div class="card-img"
+                                    style="background-image: url(./images/clients/dinner-room.png);"></div>
+                                <h3
+                                    class="card-title">Refeitórios</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-11 col-md-5 col-lg-3">
+                            <div class="client-card">
+                                <div class="card-img"
+                                    style="background-image: url(./images/clients/retail.png);"></div>
+                                <h3 class="card-title">Retalhos</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-11 col-md-5 col-lg-3">
+                            <div class="client-card mr-0">
+                                <div class="card-img"
+                                    style="background-image: url(./images/clients/caterings.png);"></div>
+                                <h3
+                                    class="card-title">Caterings</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--################################################################################################################-->
+
+        <footer id="contact">
+            <div class="container-sm">
+                <div class="row">
+                    <img class="logo" src="./images/logo/logo-dark.png"
+                        alt>
+                </div>
+
+                <div class="row content-wrapper mb-5">
+                    <div class="col-10 col-lg-3">
+                        <h4 class="co-info-header">Endereço</h4>
+                        <p class="co-info-text">MARL - Pavilhão A06</p>
+                        <p class="co-info-text mb-6">2660-421 São Julião do Tojal</p>
+                    </div>
+
+                    <div class="col-10 col-lg-5 ">
+                        <h4 class="co-info-header">Contacte-nos através de:</h4>
+                        <h3 class="co-info-subheader">Para encomendas, cabazes, serviço de catering e fornecimento de empresas:</h3>
+                        <p class="co-info-text mb-45 mb-lg-3">
+                            <a href="#"
+                                class="custom-link">shop@farmundial.pt
+                                <img class="ic-redirect"
+                                    src="./images/icons/ic-redirect.png"
+                                    alt="Redirect icon.">
+                            </a>
+                        </p>
+
+                        <h3 class="co-info-subheader">Para qualquer outra questão:</h3>
+                        <p class="co-info-text mb-6">
+                            <a href="#"
+                                class="custom-link">geral@farmundial.pt
+                                <img class="ic-redirect"
+                                    src="./images/icons/ic-redirect.png"
+                                    alt="Redirect icon.">
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="col-10 col-lg-3 align-self-center">
+                        <div class="social-media social-media-lg">
+                            <div class="social-media-item">
+                                <a href="#">
+                                    <svg class="icon"
+                                        viewBox="0 0 44 45"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="bkg"
+                                            d="M43.9969 22.0079C43.9969 33.1222 35.7608 42.3106 25.0614 43.8016C24.061 43.9404 23.0374 44.0129 21.9985 44.0129C20.7992 44.0129 19.6215 43.9173 18.4746 43.7323C8.00028 42.0454 0 32.9603 0 22.0079C0 9.85442 9.85006 0.00146484 22 0.00146484C34.1499 0.00146484 44 9.85442 44 22.0079H43.9969Z"
+                                            fill="white" />
+                                        <path class="inner"
+                                            d="M25.0614 17.6721V22.466H30.9899L30.0512 28.9236H25.0614V43.8017C24.061 43.9405 23.0374 44.013 21.9985 44.013C20.7992 44.013 19.6215 43.9174 18.4746 43.7324V28.9236H13.007V22.466H18.4746V16.6005C18.4746 12.9615 21.4235 10.0103 25.0629 10.0103V10.0133C25.0737 10.0133 25.083 10.0103 25.0938 10.0103H30.9915V15.5951H27.1378C25.9924 15.5951 25.0629 16.5249 25.0629 17.6706L25.0614 17.6721Z"
+                                            fill="black" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="social-media-item">
+                                <a href="#">
+                                    <svg class="icon"
+                                        viewBox="0 0 44 45"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="bkg"
+                                            d="M22.0501 0H21.9499C9.82731 0 0 9.8302 0 21.9564V22.0566C0 34.1828 9.82731 44.013 21.9499 44.013H22.0501C34.1727 44.013 44 34.1828 44 22.0566V21.9564C44 9.8302 34.1727 0 22.0501 0Z"
+                                            fill="white" />
+                                        <path class="inner"
+                                            d="M28.8082 8.9541H15.1934C11.432 8.9541 8.37207 12.0149 8.37207 15.7774V28.2367C8.37207 31.9991 11.432 35.06 15.1934 35.06H28.8082C32.5695 35.06 35.6295 31.9991 35.6295 28.2367V15.7774C35.6295 12.0149 32.5695 8.9541 28.8082 8.9541ZM10.7784 15.7774C10.7784 13.3426 12.7593 11.3611 15.1934 11.3611H28.8082C31.2423 11.3611 33.2231 13.3426 33.2231 15.7774V28.2367C33.2231 30.6715 31.2423 32.6529 28.8082 32.6529H15.1934C12.7593 32.6529 10.7784 30.6715 10.7784 28.2367V15.7774Z"
+                                            fill="black" />
+                                        <path class="inner"
+                                            d="M22.0008 28.3523C25.4985 28.3523 28.3457 25.5058 28.3457 22.0055C28.3457 18.5052 25.5001 15.6587 22.0008 15.6587C18.5015 15.6587 15.6558 18.5052 15.6558 22.0055C15.6558 25.5058 18.5015 28.3523 22.0008 28.3523ZM22.0008 18.0673C24.1728 18.0673 25.9394 19.8344 25.9394 22.0071C25.9394 24.1797 24.1728 25.9468 22.0008 25.9468C19.8288 25.9468 18.0622 24.1797 18.0622 22.0071C18.0622 19.8344 19.8288 18.0673 22.0008 18.0673Z"
+                                            fill="black" />
+                                        <path class="inner"
+                                            d="M28.933 16.6838C29.8749 16.6838 30.6426 15.9174 30.6426 14.9737C30.6426 14.03 29.8764 13.2637 28.933 13.2637C27.9896 13.2637 27.2234 14.03 27.2234 14.9737C27.2234 15.9174 27.9896 16.6838 28.933 16.6838Z"
+                                            fill="black" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="social-media-item">
+                                <a href="#">
+                                    <svg class="icon"
+                                        viewBox="0 0 44 45"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="bkg"
+                                            d="M43.9969 22.0079C43.9969 33.1222 35.7608 42.3106 25.0614 43.8017C24.061 43.9404 23.0374 44.0129 21.9985 44.0129C20.7992 44.0129 19.6215 43.9173 18.4746 43.7323C8.00028 42.0454 0 32.9603 0 22.0079C0 9.85442 9.85005 0.00146484 22 0.00146484C34.1499 0.00146484 44 9.85442 44 22.0079H43.9969Z"
+                                            fill="white" />
+                                        <path class="inner"
+                                            d="M8.92209 9.70801L19.0681 23.277L8.85889 34.3096H11.1572L20.0963 24.6509L27.3181 34.3096H35.138L24.4217 19.9773L33.9249 9.70801H31.6265L23.395 18.6034L16.7436 9.70801H8.92362H8.92209ZM12.301 11.401H15.8927L31.756 32.6165H28.1644L12.301 11.401Z"
+                                            fill="black" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="social-media-item">
+                                <a href="#">
+                                    <svg class="icon"
+                                        viewBox="0 0 44 45"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="bkg"
+                                            d="M22.0501 0H21.9499C9.82732 0 0 9.8302 0 21.9564V22.0566C0 34.1827 9.82732 44.0129 21.9499 44.0129H22.0501C34.1727 44.0129 44 34.1827 44 22.0566V21.9564C44 9.8302 34.1727 0 22.0501 0Z"
+                                            fill="white" />
+                                        <path class="inner"
+                                            d="M10.4932 14.6285C9.91361 14.0903 9.62537 13.4242 9.62537 12.6316C9.62537 11.839 9.91516 11.1436 10.4932 10.6039C11.0728 10.0657 11.819 9.7959 12.7331 9.7959C13.6472 9.7959 14.364 10.0657 14.9421 10.6039C15.5217 11.1421 15.81 11.819 15.81 12.6316C15.81 13.4442 15.5202 14.0903 14.9421 14.6285C14.3625 15.1666 13.6272 15.4365 12.7331 15.4365C11.839 15.4365 11.0728 15.1666 10.4932 14.6285ZM15.3229 17.7155V34.2148H10.1109V17.7155H15.3229Z"
+                                            fill="black" />
+                                        <path class="inner"
+                                            d="M32.6728 19.345C33.8089 20.5786 34.3762 22.2717 34.3762 24.4274V33.923H29.4263V25.0966C29.4263 24.0095 29.1442 23.1645 28.5816 22.5631C28.0189 21.9618 27.2605 21.6595 26.3109 21.6595C25.3613 21.6595 24.6028 21.9602 24.0402 22.5631C23.4775 23.1645 23.1954 24.0095 23.1954 25.0966V33.923H18.2163V17.6689H23.1954V19.8246C23.6995 19.106 24.3794 18.5386 25.2334 18.1207C26.0874 17.7028 27.0477 17.4946 28.116 17.4946C30.0183 17.4946 31.5382 18.1114 32.6728 19.3435V19.345Z"
+                                            fill="black" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <p class="spur">Deixe-nos fazer parte da vossa história.</p>
+                    <p class="copyright">&copy; 2024 Farmundial. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="./javascripts/config.js"></script>
+</body>
+</html>

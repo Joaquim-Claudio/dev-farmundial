@@ -1,1 +1,3 @@
 tasks.txt
+/src/node_modules/
+/src/*.env
