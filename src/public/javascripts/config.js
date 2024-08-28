@@ -1,13 +1,17 @@
 var SideNav = {
     expand: () => {
+        
         if(window.innerWidth >= 768 && window.innerWidth < 992) {
             document.getElementById("sideNav").style.width = "45%";
         } else {
             document.getElementById("sideNav").style.width = "100%";
         }
+        
+        document.querySelector(".side-navbar").style.display = "block"
     },
 
     collapse: () => {
+        document.querySelector(".side-navbar").style.display = "none"
         document.getElementById("sideNav").style.width = "0";
     }
 }
@@ -23,11 +27,9 @@ window.addEventListener("DOMContentLoaded", function(event) {
     
 })
 
-const mainElement = document.querySelector("main")
-
-mainElement.addEventListener("scroll", function() {
+window.addEventListener("scroll", function() {
     
-    if(mainElement.scrollTop >= 200) {
+    if(this.window.scrollY >= 200) {
         document.querySelector(".navbar").classList.add("retracted");
         
     } else {

@@ -47,13 +47,6 @@ footer .container-sm {
     padding-right: var(--padding);
 }
 
-
-main {
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
 .bkg-beige {
     background-color: #B68F81;
 }
@@ -120,6 +113,7 @@ main {
 .side-navbar {
     padding-top: 5rem;
     padding-left: 5rem;
+    display: none;
 }
 
 .navbar-toggler {
