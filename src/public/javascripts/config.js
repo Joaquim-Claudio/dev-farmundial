@@ -33,7 +33,7 @@ mainElement.addEventListener("scroll", function() {
             window.scrollTo({
                 left: 0,
                 top: window.innerHeight,
-                behavior: "smooth"
+                behavior: "instant"
             });
         }
         
@@ -44,7 +44,7 @@ mainElement.addEventListener("scroll", function() {
             window.scrollTo({
                 left: 0,
                 top: window.innerHeight * (-1),
-                behavior: "smooth"
+                behavior: "instant"
             });
         }
     }
