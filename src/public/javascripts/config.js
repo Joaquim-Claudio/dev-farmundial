@@ -26,15 +26,18 @@ window.addEventListener("DOMContentLoaded", function(event) {
 const mainElement = document.querySelector("main")
 
 mainElement.addEventListener("scroll", function() {
-
+    
     if(mainElement.scrollTop >= 200) {
         document.querySelector(".navbar").classList.add("retracted");
-        const body = document.querySelector("body");
-        body.scrollTo(0, body.scrollHeight);
+        if(window.innerWidth < 768) {
+            window.scrollTo(0, 200);
+        }
         
     } else {
         
         document.querySelector(".navbar").classList.remove("retracted");
-        document.querySelector("body").scrollTo(0, 0);
+        if(window.innerWidth < 768) {
+            window.scrollTo(0, 0);
+        }
     }
 })

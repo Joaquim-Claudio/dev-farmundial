@@ -8,7 +8,6 @@
 body {
     font-family: "Nunito";
     margin: 0;
-    overflow: hidden;
 }
 
 header {
@@ -54,7 +53,6 @@ main {
     overflow-x: hidden;
     overflow-y: auto;
     perspective: 10px;
-    padding-top: 6.5rem;
 }
 
 .bkg-beige {
@@ -76,8 +74,7 @@ main {
 /* Navbar rules */
 
 .navbar {
-    transform: translateZ();
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
