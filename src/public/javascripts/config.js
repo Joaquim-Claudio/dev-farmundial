@@ -26,6 +26,47 @@ window.addEventListener("DOMContentLoaded", function(event) {
         })
     })
 
+    this.document.querySelector(".btn-contact").addEventListener("click", function() {
+        Swal.fire({
+            title: "Entrar em contacto",
+            html:`
+                <p class="co-info-text">
+                    <a href="mailto:shop@farmundial.pt"
+                        class="custom-link">shop@farmundial.pt
+                        <img class="ic-redirect"
+                            src="./images/icons/ic-redirect.png"
+                            alt="Redirect icon.">
+                    </a>
+                </p>
+
+                <p class="co-info-text">
+                    <a href="mailto:geral@farmundial.pt"
+                        class="custom-link">geral@farmundial.pt
+                        <img class="ic-redirect"
+                            src="./images/icons/ic-redirect.png"
+                            alt="Redirect icon.">
+                    </a>
+                </p>
+            `,
+            showCloseButton: true,
+            showConfirmButton: false,
+            showClass: {
+              popup: `
+                animate__animated
+                animate__fadeInUp
+                animate__faster
+              `
+            },
+            hideClass: {
+              popup: `
+                animate__animated
+                animate__fadeOutDown
+                animate__faster
+              `
+            }
+          });
+    })
+
     
 })
 
