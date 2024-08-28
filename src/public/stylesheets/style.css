@@ -8,10 +8,11 @@
 body {
     font-family: "Nunito";
     margin: 0;
+    overflow: hidden;
 }
 
 header {
-    /* padding-top: 6.5rem; */
+    padding-top: 6.5rem;
 }
 
 .row {
@@ -53,7 +54,6 @@ main {
     overflow-x: hidden;
     overflow-y: auto;
     perspective: 10px;
-    padding-top: 6.5rem;
 }
 
 .bkg-beige {
@@ -569,7 +569,6 @@ footer .logo {
 /* Medium devices optimized */
 
 @media (min-width: 768px) and (max-width: 992px) {
-    
     header {
         padding-top: 0;
     }
