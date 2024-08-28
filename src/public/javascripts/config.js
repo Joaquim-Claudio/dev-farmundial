@@ -5,14 +5,16 @@ var SideNav = {
             document.getElementById("sideNav").style.width = "45%";
         } else {
             document.getElementById("sideNav").style.width = "100%";
+            document.body.style.overflow = "hidden";
         }
         
         document.querySelector(".side-navbar").style.display = "block"
     },
-
+    
     collapse: () => {
         document.querySelector(".side-navbar").style.display = "none"
         document.getElementById("sideNav").style.width = "0";
+        document.body.style.overflow = "auto";
     }
 }
 
