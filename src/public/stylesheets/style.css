@@ -53,6 +53,7 @@ main {
     overflow-x: hidden;
     overflow-y: auto;
     perspective: 10px;
+    padding-bottom: 6.5rem;
 }
 
 .bkg-beige {
@@ -74,6 +75,7 @@ main {
 /* Navbar rules */
 
 .navbar {
+    transform: translateZ();
     position: fixed;
     top: 0;
     left: 0;
