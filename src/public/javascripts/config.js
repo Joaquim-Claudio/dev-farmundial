@@ -29,9 +29,11 @@ mainElement.addEventListener("scroll", function() {
 
     if(mainElement.scrollTop >= 200) {
         document.querySelector(".navbar").classList.add("retracted");
-
+        document.querySelector("header").classList.add("pt-0");
+        
     } else {
         
         document.querySelector(".navbar").classList.remove("retracted");
+        document.querySelector("header").classList.remove("pt-0");
     }
 })
