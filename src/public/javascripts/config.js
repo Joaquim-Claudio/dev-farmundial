@@ -30,14 +30,22 @@ mainElement.addEventListener("scroll", function() {
     if(mainElement.scrollTop >= 200) {
         document.querySelector(".navbar").classList.add("retracted");
         if(window.innerWidth < 768) {
-            window.scrollTo(0, 200);
+            window.scrollTo({
+                left: 0,
+                top: window.innerHeight,
+                behavior: "smooth"
+            });
         }
         
     } else {
         
         document.querySelector(".navbar").classList.remove("retracted");
         if(window.innerWidth < 768) {
-            window.scrollTo(0, 0);
+            window.scrollTo({
+                left: 0,
+                top: window.innerHeight * (-1),
+                behavior: "smooth"
+            });
         }
     }
 })
