@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    /* padding-top: 6.5rem; */
+    padding-top: 6.5rem;
 }
 
 .row {
@@ -52,7 +52,6 @@ main {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
-    perspective: 10px;
 }
 
 .bkg-beige {
@@ -74,7 +73,7 @@ main {
 /* Navbar rules */
 
 .navbar {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -287,26 +286,11 @@ main {
 
 /* Values section */
 
-.parallax-wrapper {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
-    transform-style: preserve-3d;
-    z-index: -1;
-}
 
-.parallax-layer {
-    position: absolute;
-    height: 110%;
-    width: 110%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-.background {
-    transform: translateZ(-4px) scale(1.4);
+.our-values {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .foreground {
@@ -782,7 +766,6 @@ footer .logo {
 /* Large devices optimized */
 
 @media (min-width: 992px) {
-
     header {
         padding-top: 0;
     }
