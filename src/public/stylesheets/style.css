@@ -8,11 +8,10 @@
 body {
     font-family: "Nunito";
     margin: 0;
-    overflow: hidden;
 }
 
 header {
-    padding-top: 6.5rem;
+    /* padding-top: 6.5rem; */
 }
 
 .row {
@@ -75,7 +74,7 @@ main {
 /* Navbar rules */
 
 .navbar {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
